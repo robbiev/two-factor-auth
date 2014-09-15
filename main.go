@@ -76,5 +76,5 @@ func main() {
 	pwd := oneTimePassword(key, toBytes(epochSeconds/30))
 
 	secondsRemaining := 30 - (epochSeconds % 30)
-	fmt.Printf("%d (%d second(s) remaining)\n", pwd, secondsRemaining)
+	fmt.Printf("%06d (%d second(s) remaining)\n", pwd, secondsRemaining)
 }
