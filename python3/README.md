@@ -1,5 +1,6 @@
 # TOTP Authenticator in Python
 
+* https://medium.freecodecamp.org/how-time-based-one-time-passwords-work-and-why-you-should-use-them-in-your-app-fdd2b9ed43c3
 * https://tools.ietf.org/html/rfc4226
 * https://tools.ietf.org/html/rfc6238
 * https://github.com/google/google-authenticator/wiki/Key-Uri-Format
