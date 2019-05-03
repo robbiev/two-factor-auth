@@ -1,0 +1,32 @@
+apply plugin:'application'
+mainClassName = "common.TwoFactorAuth"
+
+buildscript {
+    repositories {
+        mavenCentral()
+        //jcenter()
+        jcenter {
+            url "http://jcenter.bintray.com/"
+        }
+    }
+}
+
+repositories {
+    //jcenter()
+    jcenter {
+        url "http://jcenter.bintray.com/"
+    }
+}
+
+apply plugin: 'java'
+
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '25.1-jre'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.12'
+
+}
+
+run{
+    standardInput = System.in
+}
+
