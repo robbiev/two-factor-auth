@@ -1,0 +1,2 @@
+fastzbarlight==0.0.14
+urlparse2==1.1.1
