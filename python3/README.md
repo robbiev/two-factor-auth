@@ -15,6 +15,6 @@ foo@bar:~$ virtualenv -p $(which python3) sandbox
 foo@bar:~$ source sandbox/bin/activate
 foo@bar:~$ pip3 install --upgrade pip
 foo@bar:~$ pip3 install -r requirements.txt 
-foo@bar:~$ python ./pass.py
+foo@bar:~$ python ./pass.py qr.png
 foo@bar:~$ deactivate
 ```
