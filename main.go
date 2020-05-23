@@ -65,7 +65,7 @@ func main() {
 	// decode the key from the first argument
 	inputNoSpaces := strings.Replace(input, " ", "", -1)
 	inputNoSpacesUpper := strings.ToUpper(inputNoSpaces)
-	key, err := base32.StdEncoding.DecodeString(inputNoSpacesUpper)
+	key, err := base32.StdEncoding.WithPadding(base32.NoPadding).DecodeString(inputNoSpacesUpper)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err.Error())
 		os.Exit(1)
